@@ -1,0 +1,12 @@
+
+<%= link_to 'New Contacct', new_contact_path, class: 'nav-link' %>
+
+<br /><br />
+
+<% @contacts.each do |contact| %>
+  <div>
+    <%= contact.first_name %> <%= contact.last_name %><br />
+    <%= contact.company %><br />
+    <%= contact.title %><br /><br />
+  </div>
+<% end %>

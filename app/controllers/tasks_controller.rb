@@ -2,7 +2,6 @@ require 'uri'
 
 class TasksController < ApplicationController
 
-
 	def index
 		@input = "http://www.google.com:80/search?q=kittens&lang=en"
 		uri = URI.parse(@input)
