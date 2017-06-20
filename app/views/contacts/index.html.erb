@@ -1,10 +1,11 @@
+<div class="header text-center">
+  <h1>Contact List</h1>
+</div>
 
-<%= link_to 'New Contacct', new_contact_path, class: 'nav-link' %>
-
-<br /><br />
+<!--<%= link_to 'New Contacct', new_contact_path, class: 'nav-link' %>-->
 
 <div class="booyah-box col-10 offset-1">
-  <h1>Enter Contact Information</h1>
+  <h2>Enter Contact Information</h1>
   <%= simple_form_for @contact do |f| %>
     <%= f.input :first_name %>
     <%= f.input :last_name %>
